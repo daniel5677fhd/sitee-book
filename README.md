@@ -1,4 +1,4 @@
-bota esse script tentro desse html <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
@@ -303,7 +303,7 @@ bota esse script tentro desse html <!DOCTYPE html>
         comentarios.forEach(c => {
           const div = document.createElement('div');
           div.className = 'comentario';
-          div.innerHTML = <small>${c.data}</small>${c.texto};
+          div.innerHTML = `<small>${c.data}</small>${c.texto}`;
           listaComentarios.appendChild(div);
         });
       }
