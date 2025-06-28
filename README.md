@@ -322,4 +322,34 @@
   </script>
 </body>
 </html>
+<a id="discord-link" href="https://discord.com/channels/1368004578435661915/1368005748067401792" target="_blank" rel="noopener noreferrer" title="Servidor Discord">
+  <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="discord" class="svg-inline--fa fa-discord fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+    <path fill="white" d="M524 64c35 0 64 29 64 64v256c0 35-29 64-64 64H116c-35 0-64-29-64-64V128c0-35 29-64 64-64h408zM208.7 186.2c-29.2 0-52.9 25.5-52.9 56.8s23.6 56.8 52.9 56.8c29.2 0 52.9-25.5 52.9-56.8s-23.7-56.8-52.9-56.8zm223 0c-29.2 0-52.9 25.5-52.9 56.8s23.6 56.8 52.9 56.8c29.2 0 52.9-25.5 52.9-56.8s-23.7-56.8-52.9-56.8z" />
+  </svg>
+</a>
 
+#discord-link {
+  position: fixed;
+  bottom: 25px;
+  right: 95px; /* afastado do botão do Instagram */
+  background: #5865F2;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  box-shadow: 0 0 15px rgba(88, 101, 242, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  z-index: 1000;
+}
+#discord-link:hover {
+  background-color: #404eed;
+  transform: scale(1.1);
+}
+#discord-link svg {
+  width: 30px;
+  height: 30px;
+  fill: #fff;
+}
