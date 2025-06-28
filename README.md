@@ -210,7 +210,6 @@
     }
   }
 </style>
-<body>
 
   <h1>SITE DOS MEUS PRODUTOS</h1>
   <p class="subtitle">Clique nos botões abaixo para interagir com os produtos e deixar seu comentário!</p>
