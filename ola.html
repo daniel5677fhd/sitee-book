@@ -164,10 +164,10 @@
       background-color: #cc0055;
     }
 
-    #instagram-link {
+    #instagram-link,
+    #discord-link {
       position: fixed;
       bottom: 25px;
-      right: 25px;
       background: #6a0dad;
       border-radius: 50%;
       width: 60px;
@@ -181,12 +181,27 @@
       z-index: 1000;
     }
 
+    #instagram-link {
+      right: 25px;
+    }
+
+    #discord-link {
+      right: 95px;
+      background-color: #5865F2;
+      box-shadow: 0 0 15px rgba(88, 101, 242, 0.7);
+    }
+
     #instagram-link:hover {
       background-color: #9300d3;
       transform: scale(1.1);
     }
 
-    #instagram-link svg {
+    #discord-link:hover {
+      background-color: #404eed;
+      transform: scale(1.1);
+    }
+
+    #instagram-link svg, #discord-link svg {
       width: 30px;
       height: 30px;
       fill: #fff;
@@ -238,15 +253,15 @@
 
   <a id="instagram-link" href="https://www.instagram.com/danioficial704?igsh=MWdod2IxNjV3b2owOA==" target="_blank" rel="noopener noreferrer" title="Instagram Danioficial704">
     <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="instagram" class="svg-inline--fa fa-instagram fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-      <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9 114.9-51.3 114.9-114.9-51.3-114.9-114.9-114.9zm0 190.7c-41.8 0-75.8-34-75.8-75.8s34-75.8 75.8-75.8 75.8 34 75.8 75.8-34 75.8-75.8 75.8zm146.4-194.3c0 14.9-12 26.9-26.9 26.9s-26.9-12-26.9-26.9 12-26.9 26.9-26.9 26.9 12 26.9 26.9zm76.1 27.2c-1.7-35.7-9.9-67.3-36.2-93.5-26.2-26.3-57.8-34.5-93.5-36.2-37-2.1-147.8-2.1-184.8 0-35.7 1.7-67.3 9.9-93.5 36.2-26.3 26.2-34.5 57.8-36.2 93.5-2.1 37-2.1 147.8 0 184.8 1.7 35.7 9.9 67.3 36.2 93.5 26.2 26.3 57.8 34.5 93.5 36.2 37 2.1 147.8 2.1 184.8 0 35.7-1.7 67.3-9.9 93.5-36.2 26.3-26.2 34.5-57.8 36.2-93.5 2.1-37 2.1-147.8 0-184.8zm-48.1 224.5c-7.8 19.6-23 34.8-42.6 42.6-29.5 11.7-99.5 9-132.8 9s-103.4 2.6-132.8-9c-19.6-7.8-34.8-23-42.6-42.6-11.7-29.5-9-99.5-9-132.8s-2.6-103.4 9-132.8c7.8-19.6 23-34.8 42.6-42.6 29.5-11.7 99.5-9 132.8-9s103.4-2.6 132.8 9c19.6 7.8 34.8 23 42.6 42.6 11.7 29.5 9 99.5 9 132.8s2.7 103.4-9 132.8z"/>
+      <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9 114.9-51.3 114.9-114.9-51.3-114.9-114.9-114.9zM370.5 115.4c0 14.9-12 26.9-26.9 26.9s-26.9-12-26.9-26.9 12-26.9 26.9-26.9 26.9 12 26.9 26.9z"/>
     </svg>
   </a>
-  <a id="discord-link" href="https://discord.com/channels/1368004578435661915/1368005748067401792" target="_blank" rel="noopener noreferrer" title="Servidor Discord">
-  <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="discord" class="svg-inline--fa fa-discord fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
-    <path fill="white" d="M524 64c35 0 64 29 64 64v256c0 35-29 64-64 64H116c-35 0-64-29-64-64V128c0-35 29-64 64-64h408zM208.7 186.2c-29.2 0-52.9 25.5-52.9 56.8s23.6 56.8 52.9 56.8c29.2 0 52.9-25.5 52.9-56.8s-23.7-56.8-52.9-56.8zm223 0c-29.2 0-52.9 25.5-52.9 56.8s23.6 56.8 52.9 56.8c29.2 0 52.9-25.5 52.9-56.8s-23.7-56.8-52.9-56.8z" />
-  </svg>
-</a>
 
+  <a id="discord-link" href="https://discord.com/channels/1368004578435661915/1368005748067401792" target="_blank" rel="noopener noreferrer" title="Servidor Discord">
+    <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="discord" class="svg-inline--fa fa-discord fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+      <path fill="white" d="M524 64c35 0 64 29 64 64v256c0 35-29 64-64 64H116c-35 0-64-29-64-64V128c0-35 29-64 64-64h408zM208.7 186.2c-29.2 0-52.9 25.5-52.9 56.8s23.6 56.8 52.9 56.8c29.2 0 52.9-25.5 52.9-56.8s-23.7-56.8-52.9-56.8zm223 0c-29.2 0-52.9 25.5-52.9 56.8s23.6 56.8 52.9 56.8c29.2 0 52.9-25.5 52.9-56.8s-23.7-56.8-52.9-56.8z"/>
+    </svg>
+  </a>
 
   <script>
     const btnComentar = document.getElementById('btnComentar');
@@ -288,7 +303,7 @@
         comentarios.forEach(c => {
           const div = document.createElement('div');
           div.className = 'comentario';
-          div.innerHTML = `<small>${c.data}</small>${c.texto}`;
+          div.innerHTML = <small>${c.data}</small>${c.texto};
           listaComentarios.appendChild(div);
         });
       }
@@ -328,8 +343,3 @@
   </script>
 </body>
 </html>
-<a id="discord-link" href="https://discord.com/channels/1368004578435661915/1368005748067401792" target="_blank" rel="noopener noreferrer" title="Servidor Discord">
-  <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="discord" class="svg-inline--fa fa-discord fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
-    <path fill="white" d="M524 64c35 0 64 29 64 64v256c0 35-29 64-64 64H116c-35 0-64-29-64-64V128c0-35 29-64 64-64h408zM208.7 186.2c-29.2 0-52.9 25.5-52.9 56.8s23.6 56.8 52.9 56.8c29.2 0 52.9-25.5 52.9-56.8s-23.7-56.8-52.9-56.8zm223 0c-29.2 0-52.9 25.5-52.9 56.8s23.6 56.8 52.9 56.8c29.2 0 52.9-25.5 52.9-56.8s-23.7-56.8-52.9-56.8z" />
-  </svg>
-</a>
