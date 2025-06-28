@@ -1,5 +1,4 @@
 <html lang="pt-BR">
-<head>
 <meta charset="UTF-8" />
 <title>SITE DOS MEUS PRODUTOS - Comentários</title>
 <style>
