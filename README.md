@@ -210,7 +210,6 @@
     }
   }
 </style>
-</head>
 <body>
 
   <h1>SITE DOS MEUS PRODUTOS</h1>
@@ -322,8 +321,5 @@
     }
   }
 </script>
-
-</body>
-</html>
 
 
