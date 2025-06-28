@@ -3,8 +3,6 @@
     <link href="css/style.css" rel="stylesheet" />
   </head>
 </html>
-html>
-<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8" />
