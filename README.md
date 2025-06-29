@@ -278,7 +278,7 @@
   </div>
 
   <!-- Botão Instagram com SVG desenho -->
-  <a id="instagram-link" href="https://www.instagram.com/danioficial704?igsh=MWdod2IxNjV3b2owOA==" target="_blank" title="Instagram Danioficial704" aria-label="Instagram">
+  <a id="instagram-link" href="https://www.instagram.com/motivacao_com_daniel/?hl=en" target="_blank" title="Instagram Danioficial704" aria-label="Instagram">
     <svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
       <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
       <circle cx="12" cy="12" r="3.5"></circle>
