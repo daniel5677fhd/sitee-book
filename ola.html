@@ -374,7 +374,7 @@
         <!-- Botão Facebook com SVG desenho -->
         <a
           id="facebook-link"
-          href="https://www.facebook.com/share/1B4HuMwH3k/"
+          href="https://www.facebook.com/profile.php?id=61577731419361&mibextid=ZbWKwL"
           target="_blank"
           title="Compartilhar no Facebook"
           aria-label="Facebook"
