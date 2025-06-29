@@ -202,10 +202,17 @@
       transform: scale(1.1);
     }
 
+    /* Mostrar SVG, esconder img dentro dos botões sociais */
     #instagram-link svg, #tiktok-link svg {
+      display: block;
       width: 30px;
       height: 30px;
-      fill: #fff;
+      stroke: #fff;
+      fill: none;
+    }
+
+    #instagram-link img, #tiktok-link img {
+      display: none;
     }
 
     @media (max-width: 700px) {
@@ -252,14 +259,23 @@
     <button id="fecharComentarios">Fechar Comentários</button>
   </div>
 
-  <!-- Botão Instagram -->
-  <a id="instagram-link" href="https://www.instagram.com/danioficial704?igsh=MWdod2IxNjV3b2owOA==" target="_blank" title="Instagram Danioficial704">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M224.1 141c-63.6 0-114.9..."/></svg>
+  <!-- Botão Instagram com SVG desenho -->
+  <a id="instagram-link" href="https://www.instagram.com/danioficial704?igsh=MWdod2IxNjV3b2owOA==" target="_blank" title="Instagram Danioficial704" aria-label="Instagram">
+    <svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+      <circle cx="12" cy="12" r="3.5"/>
+      <line x1="17.5" y1="6.5" x2="17.5" y2="6.5"/>
+    </svg>
   </a>
 
-  <!-- Botão TikTok -->
-  <a id="tiktok-link" href="https://www.tiktok.com/@jovem.investidor516?_t=ZM-8xb6XYcHwog&_r=1" target="_blank" title="TikTok Jovem Investidor">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M448,209.9v125.1c0,97.2..."/></svg>
+  <!-- Botão TikTok com SVG desenho -->
+  <a id="tiktok-link" href="https://www.tiktok.com/@jovem.investidor516?_t=ZM-8xb6XYcHwog&_r=1" target="_blank" title="TikTok Jovem Investidor" aria-label="TikTok">
+    <svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M9 18c-1 0-1.9-.5-2.5-1.3"/>
+      <path d="M9 9V5h3a4 4 0 0 0 4 4h1"/>
+      <path d="M9 18v-6h4"/>
+      <circle cx="12" cy="19" r="3"/>
+    </svg>
   </a>
 
   <script>
