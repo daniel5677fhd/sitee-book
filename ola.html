@@ -1,10 +1,13 @@
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MEU SITE - Comentários</title>
   <link href="css/style.css" rel="stylesheet" />
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
     * {
       box-sizing: border-box;
     }
@@ -163,21 +166,24 @@
       background-color: #cc0055;
     }
 
-    #instagram-link {
+    #instagram-link, #tiktok-link {
       position: fixed;
       bottom: 25px;
-      right: 25px;
-      background: #6a0dad;
       border-radius: 50%;
       width: 60px;
       height: 60px;
-      box-shadow: 0 0 15px rgba(106, 13, 173, 0.7);
       display: flex;
       align-items: center;
       justify-content: center;
       cursor: pointer;
-      transition: background-color 0.3s ease, transform 0.3s ease;
       z-index: 1000;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    #instagram-link {
+      right: 25px;
+      background: #6a0dad;
+      box-shadow: 0 0 15px rgba(106, 13, 173, 0.7);
     }
 
     #instagram-link:hover {
@@ -185,7 +191,18 @@
       transform: scale(1.1);
     }
 
-    #instagram-link svg {
+    #tiktok-link {
+      right: 95px;
+      background: #000;
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+    }
+
+    #tiktok-link:hover {
+      background-color: #ff0050;
+      transform: scale(1.1);
+    }
+
+    #instagram-link svg, #tiktok-link svg {
       width: 30px;
       height: 30px;
       fill: #fff;
@@ -216,8 +233,8 @@
 <body>
   <h1>SITE DOS MEUS PRODUTOS</h1>
   <p class="subtitle">Clique nos botões abaixo para interagir com os produtos e deixar seu comentário!</p>
-  <a class="btn" href="https://dashboard.kiwify.com/products" target="_blank" rel="noopener noreferrer">Ver Produtos</a>
-  <a class="btn" href="https://app.cakto.com.br/dashboard/products?tab=products" target="_blank" rel="noopener noreferrer">Ver Produtos</a>
+  <a class="btn" href="https://dashboard.kiwify.com/products" target="_blank">Ver Produtos</a>
+  <a class="btn" href="https://app.cakto.com.br/dashboard/products?tab=products" target="_blank">Ver Produtos</a>
   <button class="btn" id="btnComentar">Comentar</button>
 
   <div id="comentario-form" style="display:none;">
@@ -234,10 +251,15 @@
     <div id="listaComentarios"></div>
     <button id="fecharComentarios">Fechar Comentários</button>
   </div>
-  <a id="instagram-link" href="https://www.instagram.com/danioficial704?igsh=MWdod2IxNjV3b2owOA==" target="_blank" rel="noopener noreferrer" title="Instagram Danioficial704">
-    <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="instagram" class="svg-inline--fa fa-instagram fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-      <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9 114.9-51.3 114.9-114.9-51.3-114.9-114.9-114.9zm0 190.7c-41.8 0-75.8-34-75.8-75.8s34-75.8 75.8-75.8 75.8 34 75.8 75.8-34 75.8-75.8 75.8zm146.4-194.3c0 14.9-12 26.9-26.9 26.9s-26.9-12-26.9-26.9 12-26.9 26.9-26.9 26.9 12 26.9 26.9zm76.1 27.2c-1.7-35.7-9.9-67.3-36.2-93.5-26.2-26.3-57.8-34.5-93.5-36.2-37-2.1-147.8-2.1-184.8 0-35.7 1.7-67.3 9.9-93.5 36.2-26.3 26.2-34.5 57.8-36.2 93.5-2.1 37-2.1 147.8 0 184.8 1.7 35.7 9.9 67.3 36.2 93.5 26.2 26.3 57.8 34.5 93.5 36.2 37 2.1 147.8 2.1 184.8 0 35.7-1.7 67.3-9.9 93.5-36.2 26.3-26.2 34.5-57.8 36.2-93.5 2.1-37 2.1-147.8 0-184.8zm-48.1 224.5c-7.8 19.6-23 34.8-42.6 42.6-29.5 11.7-99.5 9-132.8 9s-103.4 2.6-132.8-9c-19.6-7.8-34.8-23-42.6-42.6-11.7-29.5-9-99.5-9-132.8s-2.6-103.4 9-132.8c7.8-19.6 23-34.8 42.6-42.6 29.5-11.7 99.5-9 132.8-9s103.4-2.6 132.8 9c19.6 7.8 34.8 23 42.6 42.6 11.7 29.5 9 99.5 9 132.8s2.7 103.4-9 132.8z"/>
-    </svg>
+
+  <!-- Botão Instagram -->
+  <a id="instagram-link" href="https://www.instagram.com/danioficial704?igsh=MWdod2IxNjV3b2owOA==" target="_blank" title="Instagram Danioficial704">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M224.1 141c-63.6 0-114.9..."/></svg>
+  </a>
+
+  <!-- Botão TikTok -->
+  <a id="tiktok-link" href="https://www.tiktok.com/@jovem.investidor516?_t=ZM-8xb6XYcHwog&_r=1" target="_blank" title="TikTok Jovem Investidor">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M448,209.9v125.1c0,97.2..."/></svg>
   </a>
 
   <script>
@@ -273,10 +295,10 @@
 
     function mostrarComentarios() {
       let comentarios = JSON.parse(localStorage.getItem('comentarios')) || [];
-      if(comentarios.length === 0){
+      listaComentarios.innerHTML = '';
+      if (comentarios.length === 0) {
         listaComentarios.innerHTML = '<p>Nenhum comentário ainda.</p>';
       } else {
-        listaComentarios.innerHTML = '';
         comentarios.forEach(c => {
           const div = document.createElement('div');
           div.className = 'comentario';
@@ -292,7 +314,7 @@
 
     btnEnviar.addEventListener('click', () => {
       const texto = txtComentario.value.trim();
-      if(texto === '') {
+      if (texto === '') {
         alert('Por favor, digite um comentário.');
         return;
       }
@@ -313,7 +335,7 @@
 
     window.onload = () => {
       let comentarios = JSON.parse(localStorage.getItem('comentarios')) || [];
-      if(comentarios.length > 0){
+      if (comentarios.length > 0) {
         btnVerComentarios.style.display = 'inline-block';
       }
     }
