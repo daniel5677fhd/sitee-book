@@ -1,10 +1,16 @@
+<body>
+    <div class="container-lg px-3 my-5 markdown-body">
+      
+      <h1><a href="https://daniel5677fhd.github.io/sitee-book/">sitee-book</a></h1>
+      
 
-<html lang="pt-BR">
-<head>
-  <meta charset="UTF-8" />
+      
+
+
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MEU SITE - Comentários</title>
-  <link href="css/style.css" rel="stylesheet" />
+  <link href="css/style.css" rel="stylesheet">
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
 
@@ -236,8 +242,8 @@
       }
     }
   </style>
-</head>
-<body>
+
+
   <h1>SITE DOS MEUS PRODUTOS</h1>
   <p class="subtitle">Clique nos botões abaixo para interagir com os produtos e deixar seu comentário!</p>
   <a class="btn" href="https://dashboard.kiwify.com/products" target="_blank">Ver Produtos</a>
@@ -245,16 +251,16 @@
   <button class="btn" id="btnComentar">Comentar</button>
 
   <div id="comentario-form" style="display:none;">
-    <h2>Deixe seu comentário:</h2>
+    <h2 id="deixe-seu-comentário">Deixe seu comentário:<a class="anchorjs-link " href="#deixe-seu-comentário" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h2>
     <textarea id="txtComentario" placeholder="Digite seu comentário aqui..."></textarea><br>
     <button id="enviar">Enviar Comentário</button>
     <button id="cancelar">Cancelar</button>
   </div>
 
-  <button class="btn" id="btnVerComentarios" style="display:none;">Ver Comentários</button>
+  <button class="btn" id="btnVerComentarios" style="display: inline-block;">Ver Comentários</button>
 
   <div id="comentarios" style="display:none;">
-    <h2>Comentários:</h2>
+    <h2 id="comentários">Comentários:<a class="anchorjs-link " href="#comentários" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h2>
     <div id="listaComentarios"></div>
     <button id="fecharComentarios">Fechar Comentários</button>
   </div>
@@ -262,19 +268,19 @@
   <!-- Botão Instagram com SVG desenho -->
   <a id="instagram-link" href="https://www.instagram.com/danioficial704?igsh=MWdod2IxNjV3b2owOA==" target="_blank" title="Instagram Danioficial704" aria-label="Instagram">
     <svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-      <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
-      <circle cx="12" cy="12" r="3.5"/>
-      <line x1="17.5" y1="6.5" x2="17.5" y2="6.5"/>
+      <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+      <circle cx="12" cy="12" r="3.5"></circle>
+      <line x1="17.5" y1="6.5" x2="17.5" y2="6.5"></line>
     </svg>
   </a>
 
   <!-- Botão TikTok com SVG desenho -->
-  <a id="tiktok-link" href="https://www.tiktok.com/@jovem.investidor516?_t=ZM-8xb6XYcHwog&_r=1" target="_blank" title="TikTok Jovem Investidor" aria-label="TikTok">
+  <a id="tiktok-link" href="https://www.tiktok.com/@jovem.investidor516?_t=ZM-8xb6XYcHwog&amp;_r=1" target="_blank" title="TikTok Jovem Investidor" aria-label="TikTok">
     <svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-      <path d="M9 18c-1 0-1.9-.5-2.5-1.3"/>
-      <path d="M9 9V5h3a4 4 0 0 0 4 4h1"/>
-      <path d="M9 18v-6h4"/>
-      <circle cx="12" cy="19" r="3"/>
+      <path d="M9 18c-1 0-1.9-.5-2.5-1.3"></path>
+      <path d="M9 9V5h3a4 4 0 0 0 4 4h1"></path>
+      <path d="M9 18v-6h4"></path>
+      <circle cx="12" cy="19" r="3"></circle>
     </svg>
   </a>
 
@@ -356,5 +362,14 @@
       }
     }
   </script>
+
+
+
+
+      
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js" integrity="sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg=" crossorigin="anonymous"></script>
+    <script>anchors.add();</script>
+  
+
 </body>
-</html>
